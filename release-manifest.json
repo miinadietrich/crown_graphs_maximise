@@ -998,8 +998,8 @@
     },
     {
       "path": "lean/PalomarChallenge.lean",
-      "sha256": "5fb455787e03d11e506380f1737311dd52283b01611828814b911195b60fac42",
-      "bytes": 5029
+      "sha256": "e122f7b90c3c4619f0d7e218154de1e7c2281c0134ca33715a4acad06d26cdc2",
+      "bytes": 5489
     },
     {
       "path": "lean/PalomarSolution.lean",
