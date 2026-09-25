@@ -31,11 +31,13 @@ noncomputable def value (s : Fin 256 → Bool) : Variable → Bool
 
 theorem lexBefore_iff (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexBefore s d i = true ↔ ∀ j > i, s j = s (permuteMask d j) := by
-  simp only [lexBefore, decide_eq_true_eq]
+  unfold lexBefore
+  rw [decide_eq_true_eq]
 
 theorem lexAfter_iff (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexAfter s d i = true ↔ ∀ j ≥ i, s j = s (permuteMask d j) := by
-  simp only [lexAfter, decide_eq_true_eq]
+  unfold lexAfter
+  rw [decide_eq_true_eq]
 
 theorem lex_step (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexAfter s d i = (lexBefore s d i && (s i == s (permuteMask d i))) := by
