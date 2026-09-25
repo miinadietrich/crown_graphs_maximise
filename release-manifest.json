@@ -68,8 +68,8 @@
     },
     {
       "path": "lean/Crown/BalancedLarge.lean",
-      "sha256": "ec1e4be2d7416c9f48d2bbfc3dd086bd143881ba70482106bbd0ce2adcd7e9c1",
-      "bytes": 4278
+      "sha256": "c25ef22ec8d4c90feb63e341219dfc7e0365bbe5c3f43337fbec74724518bf9f",
+      "bytes": 3906
     },
     {
       "path": "lean/Crown/Baseline.lean",
@@ -510,6 +510,11 @@
       "path": "lean/Crown/Main.lean",
       "sha256": "fe3a01e826199da83c27367faf8fe3665c2126bc4c0a7bac7078a7734033bf9c",
       "bytes": 3170
+    },
+    {
+      "path": "lean/Crown/MatrixGraph.lean",
+      "sha256": "bd8e615f99646482b97bb412dc6f6c5c9e19b9c1933b0ac972dad4a5fb5779ca",
+      "bytes": 536
     },
     {
       "path": "lean/Crown/MaskGraphTransport.lean",
@@ -993,8 +998,8 @@
     },
     {
       "path": "lean/PalomarChallenge.lean",
-      "sha256": "e122f7b90c3c4619f0d7e218154de1e7c2281c0134ca33715a4acad06d26cdc2",
-      "bytes": 5489
+      "sha256": "5fb455787e03d11e506380f1737311dd52283b01611828814b911195b60fac42",
+      "bytes": 5029
     },
     {
       "path": "lean/PalomarSolution.lean",

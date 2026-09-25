@@ -1,5 +1,6 @@
 import Crown.Blocks
 import Crown.Orientations
+import Crown.MatrixGraph
 
 /-!
 # Balanced bipartite graphs with at least sixteen vertices in each part
@@ -64,15 +65,6 @@ theorem raw_representable (k : ℕ) (hk : 8 ≤ k)
   obtain ⟨w, hw⟩ := Blocks.feasible_representable (by omega : 3 ≤ k)
     (fun b => Orientations.row (N b) o) ho
   exact ⟨w.map (alphabetSwap o), Crown.represents_equiv (alphabetSwap o) (swap_adj N o) hw⟩
-
-/-- A bipartite graph with arbitrary Boolean adjacency matrix. -/
-def matrixGraph {A B : Type*} (M : A → B → Bool) : SimpleGraph (A ⊕ B) where
-  Adj a b := match a, b with
-    | Sum.inl a, Sum.inr b => M a b = true
-    | Sum.inr b, Sum.inl a => M a b = true
-    | _, _ => False
-  symm := ⟨by intro a b; cases a <;> cases b <;> exact id⟩
-  loopless := ⟨by intro a; cases a <;> simp⟩
 
 noncomputable def pairEquiv (k : ℕ) : (Fin k × Bool) ≃ Fin (2 * k) :=
   Fintype.equivFinOfCardEq (by simp [Nat.mul_comm])
