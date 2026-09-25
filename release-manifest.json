@@ -13,7 +13,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "fe5310a7fc7629ffd5bd2619466790f3309cbd4057197bd0e9e6080341dcf809",
+      "sha256": "8253789fdca2385a5ccc7720aaa459746d6c9d061e70e542799f0d51900db90e",
       "bytes": 586
     },
     {
@@ -28,13 +28,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "5f5c686b314f2b690d8e62b446a7b9694a4de0e43fdebb80a4dd3e1c5abf3242",
-      "bytes": 2941
+      "sha256": "49e3a36f4e869c71d27da465ce891fabb8dbb43f0345af19ed0f49ab4036f853",
+      "bytes": 2945
     },
     {
       "path": "docs/dependencies.md",
-      "sha256": "9f0df135be5b119c4c12988fa902cbb65f7ae13e7ba7921b211924ac498ad93a",
-      "bytes": 4456
+      "sha256": "d4d3864804909f2b0d3f261dfe00ba90a30affb5eedc23fde4636cf8f6ebf52f",
+      "bytes": 4323
     },
     {
       "path": "docs/mathematics.md",
@@ -42,9 +42,14 @@
       "bytes": 5969
     },
     {
+      "path": "docs/palomar-submission.md",
+      "sha256": "abb831a227a1678054bf3356a31f267eeca9313e3927dc05e6101901ecdff602",
+      "bytes": 1929
+    },
+    {
       "path": "formalization.yaml",
-      "sha256": "2009252ed40eb4b977b50235ab43dff955b3d0d411bd07f657b177e7e5652d0f",
-      "bytes": 6598
+      "sha256": "eb6587743ffaf18490a5518cf77b2bec2b296dace4fcaadab513f8efd0220195",
+      "bytes": 7476
     },
     {
       "path": "lean/Challenge.lean",
@@ -223,8 +228,8 @@
     },
     {
       "path": "lean/Crown/CertificateSixValuation.lean",
-      "sha256": "37e77c87fd524fc07d8af44c3c8aa6d9e51f04a846063bb0e80693d32b061166",
-      "bytes": 6185
+      "sha256": "681e19b5d08648ab9680833f90a55553847c261e36b3f9095e6d5b9b83b87165",
+      "bytes": 6334
     },
     {
       "path": "lean/Crown/CertificateSymmetry.lean",
@@ -233,8 +238,8 @@
     },
     {
       "path": "lean/Crown/CertificateValuation.lean",
-      "sha256": "9a419bf1397aca0f10a06bc7dbbbaab1fc58f4edb091972c6167ff66aa9c887e",
-      "bytes": 6128
+      "sha256": "b72ddac3a1adea2f7245e37796c5fce814dac2214a765ff11f2560b79969bbf0",
+      "bytes": 6326
     },
     {
       "path": "lean/Crown/CertificateVariableDomain.lean",
@@ -985,6 +990,16 @@
       "path": "lean/NumericalSolution.lean",
       "sha256": "c620a1982b19030446dc0ac227e9ca5e616c70d46b57eff4732780b6696a61b7",
       "bytes": 9034
+    },
+    {
+      "path": "lean/PalomarChallenge.lean",
+      "sha256": "207f02a0aa04782e3e50bd52d0d29889754d0f6961d16f591ff2fac8ed7dfb48",
+      "bytes": 5457
+    },
+    {
+      "path": "lean/PalomarSolution.lean",
+      "sha256": "cbe3533544b9dfc9419218a78cf4df2ef085c89106f8525f92c43ae6f900b9d7",
+      "bytes": 17
     },
     {
       "path": "lean/Solution.lean",
@@ -4458,18 +4473,23 @@
     },
     {
       "path": "lean/lake-manifest.json",
-      "sha256": "021a1b03c4d9c28da240fa71fe78e227f99f29a5571102cf3033db2b1170faf2",
-      "bytes": 3509
+      "sha256": "811884dbb26c91896411b57821c1eaec946351b31e43ca26ba8ee2a153dfa6c4",
+      "bytes": 3563
     },
     {
       "path": "lean/lakefile.toml",
-      "sha256": "9ba6dc4fc1927204b55fe38d6bb1e3a75b53932217d8932abb7f0ffd2403b439",
-      "bytes": 1989
+      "sha256": "f162fdd00e894f4a5a44e2b0e9a623e5f1b61bbdf14f1f817f794a44eeca99ea",
+      "bytes": 1934
     },
     {
       "path": "lean/lean-toolchain",
-      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
-      "bytes": 25
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "bytes": 29
+    },
+    {
+      "path": "lean/palomar-comparator.json",
+      "sha256": "ad28112db9ffaa4fa4d7ea4cb62e9933667142608138b3952de0ea9770d90215",
+      "bytes": 519
     },
     {
       "path": "scripts/build_cache.py",
@@ -4488,8 +4508,8 @@
     },
     {
       "path": "scripts/install_tools.py",
-      "sha256": "608ac4644fa8ec5c03f9c9b7d8f3db61dbe4a8c52cbce8c295869f9df0f5770b",
-      "bytes": 6373
+      "sha256": "6b485325f0a70f60c098f3bada20cbff03ec7a282aacf28104b41b276130283d",
+      "bytes": 6381
     },
     {
       "path": "scripts/manifest.py",
@@ -4508,8 +4528,8 @@
     },
     {
       "path": "scripts/validate.py",
-      "sha256": "292309dfb5f13d04c25cb56eca65306ddf69e7d1ae5f9d2b5efb05082ddcf1fb",
-      "bytes": 15582
+      "sha256": "542e2bb47f3c9a64b49c76f9e6ae8d1f51e21853a7c357b0b708118281215cc1",
+      "bytes": 15586
     },
     {
       "path": "scripts/validate.sh",
@@ -4518,13 +4538,13 @@
     },
     {
       "path": "tools/README.md",
-      "sha256": "280518fb6e407228c761a58768c195b291b932c83d97881c37e25a8e4259bd49",
-      "bytes": 6165
+      "sha256": "1dfb6801b7793373d7f642cefd3768b8580ef67eb5ba4ca810f85cbc2c2e36ca",
+      "bytes": 6173
     },
     {
       "path": "tools/pins.json",
-      "sha256": "fa283c6d9aacb53d70e374bd5fba7c9f3a5022ad2e8b9bf55a7ab97d81bc2f7d",
-      "bytes": 596
+      "sha256": "531de7a76838b4028de9a92acece0d424b8d31930f6cf6ea865058322a7126b0",
+      "bytes": 600
     },
     {
       "path": "validation/.gitignore",

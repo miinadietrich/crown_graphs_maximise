@@ -2,14 +2,13 @@
 
 ## Lean environment
 
-The project uses Lean 4.33.1. `lean/lean-toolchain`, `lean/lakefile.toml` and
+The project uses Lean 4.35.0-rc3. `lean/lean-toolchain`, `lean/lakefile.toml` and
 `lean/lake-manifest.json` specify the toolchain and immutable package revisions.
 The lockfile retains all transitive revisions.
 
 | Package | Revision | Licence |
 | --- | --- | --- |
-| [mathlib](https://github.com/leanprover-community/mathlib4) | `0df444a360eaa60ab8c11dca51a86af692955474` | Apache-2.0 |
-| [LeanCert](https://github.com/alerad/leancert) | `621a43d7cf21f87872392a01e874f2f1dbddc926` | Apache-2.0 |
+| [mathlib](https://github.com/leanprover-community/mathlib4) | `c55e6e786f49471c72fbddbec5415808896aec1e` | Apache-2.0 |
 | [plausible](https://github.com/leanprover-community/plausible) | `b7eb3304aeae834b12dda98993a37f6a41f6f0bb` | Apache-2.0 |
 | [LeanSearchClient](https://github.com/leanprover-community/LeanSearchClient) | `5f4d51b81cbd3f6b32b156bfad9056621a040404` | Apache-2.0 |
 | [importGraph](https://github.com/leanprover-community/import-graph) | `16f02aa7642864af59f1ff0e384a015994db9118` | Apache-2.0 |
@@ -19,10 +18,9 @@ The lockfile retains all transitive revisions.
 | [batteries](https://github.com/leanprover-community/batteries) | `4488d40d070b9700d4d5a6aa342f0d40c31b2a2d` | Apache-2.0 |
 | [Cli](https://github.com/leanprover/lean4-cli) | `6130a47896ce867c6a4a55373441e59e565bad0f` | MIT |
 
-Mathlib and LeanCert at these revisions specify Lean 4.33.1. The proofs use
-exact integer, rational and finite combinatorial calculations. LeanCert is
-retained as a pinned optional dependency; no proof imports it and no interval
-arithmetic is used. Its kernel-checking mode is `leancert (trust := kernel)`.
+Mathlib at this revision specifies Lean 4.35.0-rc3. The proofs use exact
+integer, rational and finite combinatorial calculations. No interval
+arithmetic is used.
 
 ## Comparison tools
 
@@ -32,8 +30,10 @@ arithmetic is used. Its kernel-checking mode is `leancert (trust := kernel)`.
 | [lean4export](https://github.com/leanprover/lean4export) | `15f6055e299ad5b89345e533cc2192f4cc00f659` | Apache-2.0 |
 | [Landrun](https://github.com/Zouuup/landrun) | `811cfff51ceaf3d9843708aa6d22e9b84ccac8b4` | MIT |
 
-Comparator and lean4export use these source revisions with the selected
-Lean 4.33.1 toolchain; their upstream toolchain files specify 4.33.0.
+Comparator and lean4export remain pinned to these source revisions for the
+repository's standalone checking scripts; their upstream toolchain files
+specify 4.33.0. Palomar uses the comparator and exporter bundled with the
+submitted Lean 4.35.0-rc3 toolchain.
 Landrun supplies the Linux build sandbox. The comparison uses independently
 compiled Challenge and Solution environments and permits only `propext`,
 `Classical.choice` and `Quot.sound`.
@@ -62,7 +62,7 @@ is related to Akgün, Gent, Kitaev and Zantema, Journal of Integer Sequences
 ## Software sources
 
 The LRAT reconstruction helpers adapt Mario Carneiro's implementation in
-[`Mathlib/Tactic/Sat/FromLRAT.lean`](https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Tactic/Sat/FromLRAT.lean),
+[`Mathlib/Tactic/Sat/FromLRAT.lean`](https://github.com/leanprover-community/mathlib4/blob/c55e6e786f49471c72fbddbec5415808896aec1e/Mathlib/Tactic/Sat/FromLRAT.lean),
 copyright 2022, Apache-2.0. The helpers retain this attribution and use the
 ordinary Lean kernel to check the generated theorem declarations.
 Mathlib supplies the finite graph, list, order, counting and arithmetic

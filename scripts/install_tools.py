@@ -15,7 +15,7 @@ from resource_control import install as install_wrappers
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prefix", type=Path, required=True, help="New installation directory")
-    parser.add_argument("--toolchain", type=Path, help="Existing Lean 4.33.1 installation; otherwise use elan")
+    parser.add_argument("--toolchain", type=Path, help="Existing Lean 4.35.0-rc3 installation; otherwise use elan")
     parser.add_argument("--go", default="go", help="Go 1.27.1 executable, needed only for a new Landrun build")
     parser.add_argument("--reuse-comparator", type=Path, help="Pinned Comparator checkout with its built executable")
     parser.add_argument("--reuse-landrun-source", type=Path)
@@ -55,7 +55,7 @@ def main():
         run(["elan", "toolchain", "install", pins["lean"]])
         real = Path(output(["elan", "run", pins["lean"], "lean", "--print-prefix"])).resolve()
     version = output([real / "bin/lean", "--version"])
-    if "version 4.33.1" not in version:
+    if "version 4.35.0-rc3" not in version:
         raise RuntimeError(f"Unexpected Lean: {version}")
     env = dict(os.environ, PATH=str(real / "bin") + os.pathsep + os.environ["PATH"],
                ELAN_TOOLCHAIN=pins["lean"], LEAN_NUM_THREADS="1")

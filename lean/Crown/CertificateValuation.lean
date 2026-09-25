@@ -1,5 +1,9 @@
 import Crown.CertificateSemantics
 
+-- Lean 4.35 needs a deeper reduction when elaborating the 256-mask decision procedure.
+set_option maxRecDepth 4096
+set_option maxHeartbeats 2000000
+
 namespace Crown.CertificateValuation
 open Crown.CertificateSemantics
 
@@ -27,11 +31,11 @@ noncomputable def value (s : Fin 256 → Bool) : Variable → Bool
 
 theorem lexBefore_iff (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexBefore s d i = true ↔ ∀ j > i, s j = s (permuteMask d j) := by
-  simp [lexBefore]
+  simp only [lexBefore, decide_eq_true_eq]
 
 theorem lexAfter_iff (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexAfter s d i = true ↔ ∀ j ≥ i, s j = s (permuteMask d j) := by
-  simp [lexAfter]
+  simp only [lexAfter, decide_eq_true_eq]
 
 theorem lex_step (s : Fin 256 → Bool) (d : Fin 8 ≃ Fin 8) (i : Fin 256) :
     lexAfter s d i = (lexBefore s d i && (s i == s (permuteMask d i))) := by

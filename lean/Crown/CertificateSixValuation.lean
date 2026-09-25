@@ -1,5 +1,9 @@
 import Crown.CertificateSixSemantics
 
+-- Lean 4.35 needs a deeper reduction when elaborating the 64-mask decision procedure.
+set_option maxRecDepth 4096
+set_option maxHeartbeats 2000000
+
 namespace Crown.CertificateSixValuation
 open Crown.CertificateSemantics Crown.CertificateSixSemantics
 

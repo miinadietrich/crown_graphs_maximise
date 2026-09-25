@@ -1,6 +1,6 @@
 # Checking tools
 
-`pins.json` identifies the exact Lean, Comparator, lean4export, Landrun, and Go versions. The proof project's `lean/lake-manifest.json` pins every Lean library dependency. The installer selects Lean 4.33.1 and replaces Comparator's `master` requirement for lean4export with the listed commit; all checker and kernel code comes from those pinned sources.
+`pins.json` identifies the exact Lean, Comparator, lean4export, Landrun, and Go versions. The proof project's `lean/lake-manifest.json` pins every Lean library dependency. The installer selects Lean 4.35.0-rc3 and replaces Comparator's `master` requirement for lean4export with the listed commit; all checker and kernel code comes from those pinned sources.
 
 The checking environment requires Linux with Landlock, an unprivileged user with a working systemd user session, Python 3.10 or newer, Git, a C compiler, Elan, and Go 1.27.1. Network access is needed for installation and dependency-cache retrieval. Comparison itself runs with the socket restrictions recommended by Comparator, extended to TCP/IP, Netlink, and packet sockets. Real Landrun remains enabled throughout Comparator's compilation and export phases.
 
@@ -18,7 +18,7 @@ To use trusted existing builds, supply all relevant paths:
 
 ```sh
 python3 scripts/install_tools.py --prefix "$HOME/.cache/crown-proof-tools-reuse" \
-  --toolchain /path/to/lean-4.33.1 \
+  --toolchain /path/to/lean-4.35.0-rc3 \
   --reuse-comparator /path/to/comparator-checkout \
   --reuse-landrun-source /path/to/landrun-checkout \
   --reuse-landrun /path/to/landrun-binary

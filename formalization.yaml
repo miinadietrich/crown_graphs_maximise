@@ -1,7 +1,7 @@
 {
   "version": "v0.4",
   "project": {
-    "name": "Crown graph representation bounds",
+    "name": "A formal proof that crown graphs maximise the representation number of bipartite graphs",
     "description": "Lean proofs of the sharp bipartite representation bound, crown extremality, and the supporting finite and structural results.",
     "authors": [
       "Matthew J. Colbrook",
@@ -96,7 +96,8 @@
     "methods": [
       {
         "method": "other",
-        "tool_setup": "Lean tactic scripts, exact finite computation and LRAT proof-term reconstruction; standalone Python and C++ certificate validation."
+        "tool_setup": "Lean tactic scripts, exact finite computation and LRAT proof-term reconstruction; standalone Python and C++ certificate validation.",
+        "models": ["ChatGPT 5.5", "ChatGPT 5.6", "ChatGPT 6"]
       }
     ]
   },
@@ -180,7 +181,7 @@
   },
   "review": {
     "status": "Lean kernel checked; independent statement comparison accepted",
-    "notes": "All 243 configured theorem comparisons and public axiom reports passed. Standalone certificate and arithmetic validation passed.",
+    "notes": "All 243 configured theorem comparisons and public axiom reports passed. Standalone certificate and arithmetic validation passed. The authors reviewed the formal statements against the manuscript definitions, hypotheses and conclusions; Lean Comparator statements and axiom dependencies were independently inspected. ChatGPT 5.5 and 5.6 assisted with combinatorial counting, construction and certificate verification, and ChatGPT 6 through Codex assisted with the Lean formalisation. The authors reviewed and adopted all content and take full responsibility.",
     "evidence": [
       "verification/lean.json",
       "verification/axioms.txt",
@@ -195,15 +196,14 @@
     "supporting_results": "The comparison includes the main results and supporting lemmas. Literal histogram checks establish properties of supplied data."
   },
   "versions": {
-    "lean": "4.33.1",
-    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
-    "LeanCert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "lean": "4.35.0-rc3",
+    "mathlib": "c55e6e786f49471c72fbddbec5415808896aec1e",
     "metadata_standard": "99c678e569c7c4c0772db297c5ddd5e4c9b6322e"
   },
-  "acknowledgements": "Certificate replay adapts Mario Carneiro’s Mathlib/Tactic/Sat/FromLRAT.lean. Library, mathematical and tool attribution is in NOTICE and docs/dependencies.md.",
+  "acknowledgements": "Certificate replay adapts Mario Carneiro’s Mathlib/Tactic/Sat/FromLRAT.lean. During development, ChatGPT 5.5 and 5.6 through Codex assisted with combinatorial counting, construction and verification of finite certificates; ChatGPT 6 through Codex assisted with the Lean formalisation. The authors reviewed the formal statements, proofs and manuscript against the definitions, hypotheses and conclusions, adopted the resulting content, and take full responsibility. Library, mathematical and tool attribution is in NOTICE and docs/dependencies.md.",
   "related_formalizations": [
     {
-      "id": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Tactic/Sat/FromLRAT.lean",
+      "id": "https://github.com/leanprover-community/mathlib4/blob/c55e6e786f49471c72fbddbec5415808896aec1e/Mathlib/Tactic/Sat/FromLRAT.lean",
       "relationship": "adapts",
       "note": "Mario Carneiro’s LRAT proof reconstruction; see NOTICE."
     }

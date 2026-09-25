@@ -97,7 +97,7 @@ def main():
     runner_inputs = inventory(ROOT / "scripts")
     pins_hash = digest(ROOT / "tools/pins.json")
     if (project / "lean-toolchain").read_text().strip() != pins["lean"]:
-        parser.error("The project must select Lean 4.33.1")
+        parser.error(f"The project must select {pins['lean']}")
     config = configuration(project)
     solution = (project / "Solution.lean").read_text(encoding="utf-8-sig")
     printed = re.findall(r"^\s*#print\s+axioms\s+(\S+)", solution, re.M)

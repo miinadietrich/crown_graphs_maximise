@@ -1,0 +1,19 @@
+{
+  "challenge_module": "PalomarChallenge",
+  "solution_module": "PalomarSolution",
+  "theorem_names": [
+    "Crown.balanced_matrix_representation_bound",
+    "Crown.bipartite_representation_bound",
+    "Crown.bipartite_representation_number_bound",
+    "Crown.crown_representation_number",
+    "Crown.crown_extremal",
+    "Crown.crown_extremal_uniform_length",
+    "Crown.small_bipartite_two_uniform"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": true
+}

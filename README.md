@@ -24,7 +24,7 @@ lake exe cache get
 lake build Solution
 ```
 
-`lean-toolchain` selects Lean 4.33.1. Both direct dependencies and all transitive
+`lean-toolchain` selects Lean 4.35.0-rc3. Both direct dependencies and all transitive
 dependencies are pinned in the Lake configuration and lockfile. The supplied
 Lean modules and literal certificate data are complete compilation inputs.
 Certificate replay can require several hours and substantial disk space.
