@@ -13,7 +13,7 @@
     },
     {
       "path": "CITATION.cff",
-      "sha256": "8253789fdca2385a5ccc7720aaa459746d6c9d061e70e542799f0d51900db90e",
+      "sha256": "ab2004ca3601333a74c2abda6ac15b0a936ff179a14b68aeac24a9a9f0a452b5",
       "bytes": 586
     },
     {
@@ -43,8 +43,8 @@
     },
     {
       "path": "docs/palomar-submission.md",
-      "sha256": "abb831a227a1678054bf3356a31f267eeca9313e3927dc05e6101901ecdff602",
-      "bytes": 1929
+      "sha256": "db50d53691e04f1cdd9c4709fa62c8d4bef7b108bc7d7e9edf2425b2ecdf34af",
+      "bytes": 1939
     },
     {
       "path": "formalization.yaml",
@@ -228,8 +228,8 @@
     },
     {
       "path": "lean/Crown/CertificateSixValuation.lean",
-      "sha256": "681e19b5d08648ab9680833f90a55553847c261e36b3f9095e6d5b9b83b87165",
-      "bytes": 6334
+      "sha256": "ff5fc41d79f349a283738baded86da026a5941319475ca856a32152e642f4c11",
+      "bytes": 6384
     },
     {
       "path": "lean/Crown/CertificateSymmetry.lean",
@@ -238,8 +238,8 @@
     },
     {
       "path": "lean/Crown/CertificateValuation.lean",
-      "sha256": "b72ddac3a1adea2f7245e37796c5fce814dac2214a765ff11f2560b79969bbf0",
-      "bytes": 6326
+      "sha256": "195dd319a5581d1419971687eebcd16b753e7e472e36feec5a605078b0925558",
+      "bytes": 6328
     },
     {
       "path": "lean/Crown/CertificateVariableDomain.lean",
@@ -4478,7 +4478,7 @@
     },
     {
       "path": "lean/lakefile.toml",
-      "sha256": "f162fdd00e894f4a5a44e2b0e9a623e5f1b61bbdf14f1f817f794a44eeca99ea",
+      "sha256": "710696ac626b787353324ddade7f03cf8ad8162512e67caf0e4a1517e710ca8c",
       "bytes": 1934
     },
     {

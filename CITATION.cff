@@ -8,7 +8,7 @@ authors:
   - family-names: Drysdale
     given-names: Catherine
 license: Apache-2.0
-version: 0.2.0
+version: 0.2.2
 abstract: >-
   Lean proofs of the sharp upper bound for representation numbers of
   bipartite graphs and the extremality of crown graphs, together with

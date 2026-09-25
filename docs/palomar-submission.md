@@ -19,12 +19,12 @@ git status
 git add -A
 git commit -m "Prepare Palomar submission"
 git push origin codex/palomar-prep
-git tag -a v0.2.0 -m "Version 0.2.0: Palomar-ready Lean formalization"
-git push origin v0.2.0
+git tag -a v0.2.2 -m "Version 0.2.2: Palomar heartbeat fix and release metadata"
+git push origin v0.2.2
 git rev-parse HEAD
 ```
 
-The last command supplies the 40-character commit SHA for Palomar. A GitHub Release can then be created for tag `v0.2.0`; the release page and the Palomar submission are separate records.
+The last command supplies the 40-character commit SHA for Palomar. A GitHub Release can then be created for tag `v0.2.2`; the release page and the Palomar submission are separate records.
 
 On `https://submit.palomar-registry.org`, use:
 
