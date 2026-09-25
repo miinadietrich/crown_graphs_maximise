@@ -1,0 +1,114 @@
+import generated.ThreeClosureFastSteps0019
+import Crown.ThreeClosureDispatch
+import Mathlib.Tactic.FinCases
+namespace Crown.ThreeClosure
+open Crown.Ranks Crown.FiniteClosureChecks
+set_option maxRecDepth 200000
+set_option maxHeartbeats 0
+set_option Elab.async false
+theorem dispatch0019 : ∀ i : Fin 100,
+    StepCheck rows owner support core nextHint lastHint 6 (rangeIndex 1900 100 (by decide) i) := by
+  intro i
+  fin_cases i
+  · exact fastStep1900
+  · exact fastStep1901
+  · exact fastStep1902
+  · exact fastStep1903
+  · exact fastStep1904
+  · exact fastStep1905
+  · exact fastStep1906
+  · exact fastStep1907
+  · exact fastStep1908
+  · exact fastStep1909
+  · exact fastStep1910
+  · exact fastStep1911
+  · exact fastStep1912
+  · exact fastStep1913
+  · exact fastStep1914
+  · exact fastStep1915
+  · exact fastStep1916
+  · exact fastStep1917
+  · exact fastStep1918
+  · exact fastStep1919
+  · exact fastStep1920
+  · exact fastStep1921
+  · exact fastStep1922
+  · exact fastStep1923
+  · exact fastStep1924
+  · exact fastStep1925
+  · exact fastStep1926
+  · exact fastStep1927
+  · exact fastStep1928
+  · exact fastStep1929
+  · exact fastStep1930
+  · exact fastStep1931
+  · exact fastStep1932
+  · exact fastStep1933
+  · exact fastStep1934
+  · exact fastStep1935
+  · exact fastStep1936
+  · exact fastStep1937
+  · exact fastStep1938
+  · exact fastStep1939
+  · exact fastStep1940
+  · exact fastStep1941
+  · exact fastStep1942
+  · exact fastStep1943
+  · exact fastStep1944
+  · exact fastStep1945
+  · exact fastStep1946
+  · exact fastStep1947
+  · exact fastStep1948
+  · exact fastStep1949
+  · exact fastStep1950
+  · exact fastStep1951
+  · exact fastStep1952
+  · exact fastStep1953
+  · exact fastStep1954
+  · exact fastStep1955
+  · exact fastStep1956
+  · exact fastStep1957
+  · exact fastStep1958
+  · exact fastStep1959
+  · exact fastStep1960
+  · exact fastStep1961
+  · exact fastStep1962
+  · exact fastStep1963
+  · exact fastStep1964
+  · exact fastStep1965
+  · exact fastStep1966
+  · exact fastStep1967
+  · exact fastStep1968
+  · exact fastStep1969
+  · exact fastStep1970
+  · exact fastStep1971
+  · exact fastStep1972
+  · exact fastStep1973
+  · exact fastStep1974
+  · exact fastStep1975
+  · exact fastStep1976
+  · exact fastStep1977
+  · exact fastStep1978
+  · exact fastStep1979
+  · exact fastStep1980
+  · exact fastStep1981
+  · exact fastStep1982
+  · exact fastStep1983
+  · exact fastStep1984
+  · exact fastStep1985
+  · exact fastStep1986
+  · exact fastStep1987
+  · exact fastStep1988
+  · exact fastStep1989
+  · exact fastStep1990
+  · exact fastStep1991
+  · exact fastStep1992
+  · exact fastStep1993
+  · exact fastStep1994
+  · exact fastStep1995
+  · exact fastStep1996
+  · exact fastStep1997
+  · exact fastStep1998
+  · exact fastStep1999
+#print axioms dispatch0019
+end Crown.ThreeClosure

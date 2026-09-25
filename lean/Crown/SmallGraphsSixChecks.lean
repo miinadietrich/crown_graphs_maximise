@@ -1,0 +1,1 @@
+import Crown.SmallGraphsSixChecks15

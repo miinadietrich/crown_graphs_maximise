@@ -1,0 +1,142 @@
+import Crown.SmallGraphsSixChecks
+namespace Crown.SmallGraphs
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+theorem six_tables_indexed : ∀ q : Fin 128, ∀ r : Fin 256, ValidCandidate (r.val + q.val * 256) := by
+  intro q; fin_cases q
+  · exact six_chunk_000
+  · exact six_chunk_001
+  · exact six_chunk_002
+  · exact six_chunk_003
+  · exact six_chunk_004
+  · exact six_chunk_005
+  · exact six_chunk_006
+  · exact six_chunk_007
+  · exact six_chunk_008
+  · exact six_chunk_009
+  · exact six_chunk_010
+  · exact six_chunk_011
+  · exact six_chunk_012
+  · exact six_chunk_013
+  · exact six_chunk_014
+  · exact six_chunk_015
+  · exact six_chunk_016
+  · exact six_chunk_017
+  · exact six_chunk_018
+  · exact six_chunk_019
+  · exact six_chunk_020
+  · exact six_chunk_021
+  · exact six_chunk_022
+  · exact six_chunk_023
+  · exact six_chunk_024
+  · exact six_chunk_025
+  · exact six_chunk_026
+  · exact six_chunk_027
+  · exact six_chunk_028
+  · exact six_chunk_029
+  · exact six_chunk_030
+  · exact six_chunk_031
+  · exact six_chunk_032
+  · exact six_chunk_033
+  · exact six_chunk_034
+  · exact six_chunk_035
+  · exact six_chunk_036
+  · exact six_chunk_037
+  · exact six_chunk_038
+  · exact six_chunk_039
+  · exact six_chunk_040
+  · exact six_chunk_041
+  · exact six_chunk_042
+  · exact six_chunk_043
+  · exact six_chunk_044
+  · exact six_chunk_045
+  · exact six_chunk_046
+  · exact six_chunk_047
+  · exact six_chunk_048
+  · exact six_chunk_049
+  · exact six_chunk_050
+  · exact six_chunk_051
+  · exact six_chunk_052
+  · exact six_chunk_053
+  · exact six_chunk_054
+  · exact six_chunk_055
+  · exact six_chunk_056
+  · exact six_chunk_057
+  · exact six_chunk_058
+  · exact six_chunk_059
+  · exact six_chunk_060
+  · exact six_chunk_061
+  · exact six_chunk_062
+  · exact six_chunk_063
+  · exact six_chunk_064
+  · exact six_chunk_065
+  · exact six_chunk_066
+  · exact six_chunk_067
+  · exact six_chunk_068
+  · exact six_chunk_069
+  · exact six_chunk_070
+  · exact six_chunk_071
+  · exact six_chunk_072
+  · exact six_chunk_073
+  · exact six_chunk_074
+  · exact six_chunk_075
+  · exact six_chunk_076
+  · exact six_chunk_077
+  · exact six_chunk_078
+  · exact six_chunk_079
+  · exact six_chunk_080
+  · exact six_chunk_081
+  · exact six_chunk_082
+  · exact six_chunk_083
+  · exact six_chunk_084
+  · exact six_chunk_085
+  · exact six_chunk_086
+  · exact six_chunk_087
+  · exact six_chunk_088
+  · exact six_chunk_089
+  · exact six_chunk_090
+  · exact six_chunk_091
+  · exact six_chunk_092
+  · exact six_chunk_093
+  · exact six_chunk_094
+  · exact six_chunk_095
+  · exact six_chunk_096
+  · exact six_chunk_097
+  · exact six_chunk_098
+  · exact six_chunk_099
+  · exact six_chunk_100
+  · exact six_chunk_101
+  · exact six_chunk_102
+  · exact six_chunk_103
+  · exact six_chunk_104
+  · exact six_chunk_105
+  · exact six_chunk_106
+  · exact six_chunk_107
+  · exact six_chunk_108
+  · exact six_chunk_109
+  · exact six_chunk_110
+  · exact six_chunk_111
+  · exact six_chunk_112
+  · exact six_chunk_113
+  · exact six_chunk_114
+  · exact six_chunk_115
+  · exact six_chunk_116
+  · exact six_chunk_117
+  · exact six_chunk_118
+  · exact six_chunk_119
+  · exact six_chunk_120
+  · exact six_chunk_121
+  · exact six_chunk_122
+  · exact six_chunk_123
+  · exact six_chunk_124
+  · exact six_chunk_125
+  · exact six_chunk_126
+  · exact six_chunk_127
+theorem six_tables (m : Fin 32768) : ValidCandidate m.val := by
+  have hq : m.val / 256 < 128 := by omega
+  have hr : m.val % 256 < 256 := Nat.mod_lt _ (by decide)
+  have h := six_tables_indexed ⟨m.val / 256,hq⟩ ⟨m.val % 256,hr⟩
+  have he : m.val % 256 + m.val / 256 * 256 = m.val := by omega
+  simpa only [he] using h
+#print axioms six_tables
+end Crown.SmallGraphs

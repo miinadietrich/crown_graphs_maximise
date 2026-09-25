@@ -1,0 +1,232 @@
+{
+  "command": [
+    "python3",
+    "verify.py"
+  ],
+  "working_directory": "validation",
+  "exit_code": 0,
+  "result": "All certificate and arithmetic checks passed.",
+  "verifier_sha256": "94a81dff3e96c3e96b4a62770fb93fc609afc2ed49da898edd2323ce8a5ec32a",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "elapsed_seconds": 440.741,
+  "full_run_report_sha256": "98f0725d85e10ba130cce86ff6d8e47daeaa3096187203b3016029e81854a249",
+  "checks": {
+    "closure": {
+      "rows": 64,
+      "states": 2517,
+      "cores": 759,
+      "core_sizes": {
+        "2": 27,
+        "3": 18,
+        "4": 6,
+        "5": 204,
+        "6": 504
+      },
+      "local_obligations": {
+        "seed": 81,
+        "step": 7695,
+        "terminal": 1485,
+        "fixed_pair": 27
+      },
+      "support_soundness_checked": true,
+      "core_minimality_checked": true
+    },
+    "three_pair_formula": {
+      "variables": 39382,
+      "full_clauses": 222795,
+      "reduced_clauses": 141926,
+      "full_sha256": "fe7c02cf1aa3127654453184ded60c5710c12384b95396d8e33b281cc95a9c48",
+      "templates": 60,
+      "global_cores": 38430,
+      "all_reduced_clauses_are_exact_indexed_members": true
+    },
+    "three_pair_lrat": {
+      "additions": 3305,
+      "hint_references": 1869328,
+      "final_empty_clause": true
+    },
+    "four_pair_formula": {
+      "variables": 10116,
+      "clauses": 38240,
+      "sha256": "7393356c523a001f92d582ddf6d84fa18bbb3883021c82d72aa241789fb14bdc",
+      "templates": 840,
+      "global_cores": 4935,
+      "exact_regeneration_matches": true
+    },
+    "arithmetic": {
+      "all_per_z_maxima_including_omitted_zeros": {
+        "6,0": [
+          5040,
+          5040,
+          7200,
+          8640,
+          8064,
+          5040,
+          1440,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "6,1": [
+          1440,
+          2400,
+          2880,
+          3456,
+          2880,
+          1440,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "7,0": [
+          40320,
+          40320,
+          60480,
+          79200,
+          86400,
+          72000,
+          40320,
+          10080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "7,1": [
+          10080,
+          17280,
+          21600,
+          28800,
+          28800,
+          23040,
+          10080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "Q": {
+        "5": 30240,
+        "6": 665280,
+        "7": 17297280
+      },
+      "probability_maxima": {
+        "6": "1/77",
+        "7": "5/1001"
+      },
+      "union_bounds": {
+        "6": "6/7",
+        "7": "5/11"
+      },
+      "M5_sorted_table": {
+        "(0, 5, 5)": 120,
+        "(1, 4, 5)": 120,
+        "(2, 3, 5)": 120,
+        "(2, 4, 4)": 192,
+        "(3, 3, 4)": 216
+      },
+      "M5_maximum": 216,
+      "five_pair_pair_probability": "1/70",
+      "five_pair_triple_probability": "1/315",
+      "triple_count_d_domain": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "five_pair_union_bound": "59/70"
+    },
+    "checker_controls": {
+      "rup_positive": "{\"verified_unsat\":true,\"original_clauses\":4,\"input_records_checked\":0,\"additions_checked\":1,\"deletions_ignored\":0,\"proof_lines_read\":1,\"seconds\":0.00563678}",
+      "rup_negative": "VERIFICATION FAILED: non-RUP clause at proof line 1",
+      "rup_negative_exit": 1,
+      "lrat_positive_and_negative_passed": true
+    },
+    "four_pair_rup": {
+      "exit_code": 0,
+      "stdout": "{\"verified_unsat\":true,\"original_clauses\":38240,\"input_records_checked\":0,\"additions_checked\":34481,\"deletions_ignored\":0,\"proof_lines_read\":34481,\"seconds\":34.1297}\n",
+      "stderr": "",
+      "strict_trace_lines": 34482
+    },
+    "counter_checker_controls": {
+      "rup_positive": "{\"verified_unsat\":true,\"original_clauses\":4,\"additions_checked\":1,\"method\":\"occurrence_counts\",\"seconds\":0.00422539}",
+      "rup_negative": "VERIFICATION FAILED: non-RUP addition 1",
+      "rup_negative_exit": 1,
+      "lrat_positive_and_negative_passed": true
+    },
+    "four_pair_rup_counters": {
+      "exit_code": 0,
+      "stdout": "{\"verified_unsat\":true,\"original_clauses\":38240,\"additions_checked\":34481,\"method\":\"occurrence_counts\",\"seconds\":371.121}\n",
+      "stderr": ""
+    }
+  },
+  "closure_data": {
+    "full_run_sha256": "001efb1049864f8a103aaa52ee2bba27d8c9537d95819b445d94fb2c959344a6",
+    "release_sha256": "5b907245e9dca622620c47d10a7576cf0e9478f08ebb65755d33bc69eaac214a",
+    "mathematical_fields_unchanged": true,
+    "release_data_recheck": "verify.check_closure() passed",
+    "recheck_result": {
+      "rows": 64,
+      "states": 2517,
+      "cores": 759,
+      "core_sizes": {
+        "2": 27,
+        "3": 18,
+        "4": 6,
+        "5": 204,
+        "6": 504
+      },
+      "local_obligations": {
+        "seed": 81,
+        "step": 7695,
+        "terminal": 1485,
+        "fixed_pair": 27
+      },
+      "support_soundness_checked": true,
+      "core_minimality_checked": true
+    }
+  },
+  "full_run_input_sha256": {
+    "data/pairing6.cnf": "c175ef917c80889386086e76781671ca0004168f2dd3bc6cd99fc9b59b81cb70",
+    "data/pairing6.lrat": "a0408e3540bc3d34895cbcc918fa23650a5856ec18c839284ca547fbf9ad68f2",
+    "data/pairing6-provenance.json": "8a06001bd2d486710e3508db5b88d825c29e5017976785d5d61c690ffbd06a12",
+    "data/three-pair-closure.json": "001efb1049864f8a103aaa52ee2bba27d8c9537d95819b445d94fb2c959344a6",
+    "data/pairing8.cnf": "7393356c523a001f92d582ddf6d84fa18bbb3883021c82d72aa241789fb14bdc",
+    "data/pairing8.rup.gz": "c8ed1cd299ff9761d5194f46193dd2404a9426fe12c2ebca6108252c5dfc954c",
+    "check_rup.cpp": "2ac42602e513e4fee0b3ce99329abaf737474c86ce6e359dd736528686d49a6f",
+    "check_rup_counters.cpp": "06da6a3143cc5fcd009f65bb7286481feffcfdef508f8c1fe6dd114c9e2e3ed7",
+    "verify.py": "94a81dff3e96c3e96b4a62770fb93fc609afc2ed49da898edd2323ce8a5ec32a"
+  },
+  "release_input_sha256": {
+    "data/pairing6.cnf": "c175ef917c80889386086e76781671ca0004168f2dd3bc6cd99fc9b59b81cb70",
+    "data/pairing6.lrat": "a0408e3540bc3d34895cbcc918fa23650a5856ec18c839284ca547fbf9ad68f2",
+    "data/pairing6-provenance.json": "8a06001bd2d486710e3508db5b88d825c29e5017976785d5d61c690ffbd06a12",
+    "data/three-pair-closure.json": "5b907245e9dca622620c47d10a7576cf0e9478f08ebb65755d33bc69eaac214a",
+    "data/pairing8.cnf": "7393356c523a001f92d582ddf6d84fa18bbb3883021c82d72aa241789fb14bdc",
+    "data/pairing8.rup.gz": "c8ed1cd299ff9761d5194f46193dd2404a9426fe12c2ebca6108252c5dfc954c",
+    "check_rup.cpp": "2ac42602e513e4fee0b3ce99329abaf737474c86ce6e359dd736528686d49a6f",
+    "check_rup_counters.cpp": "06da6a3143cc5fcd009f65bb7286481feffcfdef508f8c1fe6dd114c9e2e3ed7",
+    "verify.py": "94a81dff3e96c3e96b4a62770fb93fc609afc2ed49da898edd2323ce8a5ec32a"
+  }
+}

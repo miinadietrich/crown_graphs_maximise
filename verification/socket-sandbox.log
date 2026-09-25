@@ -1,0 +1,8 @@
+Running as unit: run-u105.service
+socket denied: AddressFamily.AF_UNIX [Errno 97] Address family not supported by protocol
+socket denied: AddressFamily.AF_INET [Errno 97] Address family not supported by protocol
+socket denied: AddressFamily.AF_INET6 [Errno 97] Address family not supported by protocol
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 44ms
+CPU time consumed: 41ms

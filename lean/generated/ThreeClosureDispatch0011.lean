@@ -1,0 +1,114 @@
+import generated.ThreeClosureFastSteps0011
+import Crown.ThreeClosureDispatch
+import Mathlib.Tactic.FinCases
+namespace Crown.ThreeClosure
+open Crown.Ranks Crown.FiniteClosureChecks
+set_option maxRecDepth 200000
+set_option maxHeartbeats 0
+set_option Elab.async false
+theorem dispatch0011 : ∀ i : Fin 100,
+    StepCheck rows owner support core nextHint lastHint 6 (rangeIndex 1100 100 (by decide) i) := by
+  intro i
+  fin_cases i
+  · exact fastStep1100
+  · exact fastStep1101
+  · exact fastStep1102
+  · exact fastStep1103
+  · exact fastStep1104
+  · exact fastStep1105
+  · exact fastStep1106
+  · exact fastStep1107
+  · exact fastStep1108
+  · exact fastStep1109
+  · exact fastStep1110
+  · exact fastStep1111
+  · exact fastStep1112
+  · exact fastStep1113
+  · exact fastStep1114
+  · exact fastStep1115
+  · exact fastStep1116
+  · exact fastStep1117
+  · exact fastStep1118
+  · exact fastStep1119
+  · exact fastStep1120
+  · exact fastStep1121
+  · exact fastStep1122
+  · exact fastStep1123
+  · exact fastStep1124
+  · exact fastStep1125
+  · exact fastStep1126
+  · exact fastStep1127
+  · exact fastStep1128
+  · exact fastStep1129
+  · exact fastStep1130
+  · exact fastStep1131
+  · exact fastStep1132
+  · exact fastStep1133
+  · exact fastStep1134
+  · exact fastStep1135
+  · exact fastStep1136
+  · exact fastStep1137
+  · exact fastStep1138
+  · exact fastStep1139
+  · exact fastStep1140
+  · exact fastStep1141
+  · exact fastStep1142
+  · exact fastStep1143
+  · exact fastStep1144
+  · exact fastStep1145
+  · exact fastStep1146
+  · exact fastStep1147
+  · exact fastStep1148
+  · exact fastStep1149
+  · exact fastStep1150
+  · exact fastStep1151
+  · exact fastStep1152
+  · exact fastStep1153
+  · exact fastStep1154
+  · exact fastStep1155
+  · exact fastStep1156
+  · exact fastStep1157
+  · exact fastStep1158
+  · exact fastStep1159
+  · exact fastStep1160
+  · exact fastStep1161
+  · exact fastStep1162
+  · exact fastStep1163
+  · exact fastStep1164
+  · exact fastStep1165
+  · exact fastStep1166
+  · exact fastStep1167
+  · exact fastStep1168
+  · exact fastStep1169
+  · exact fastStep1170
+  · exact fastStep1171
+  · exact fastStep1172
+  · exact fastStep1173
+  · exact fastStep1174
+  · exact fastStep1175
+  · exact fastStep1176
+  · exact fastStep1177
+  · exact fastStep1178
+  · exact fastStep1179
+  · exact fastStep1180
+  · exact fastStep1181
+  · exact fastStep1182
+  · exact fastStep1183
+  · exact fastStep1184
+  · exact fastStep1185
+  · exact fastStep1186
+  · exact fastStep1187
+  · exact fastStep1188
+  · exact fastStep1189
+  · exact fastStep1190
+  · exact fastStep1191
+  · exact fastStep1192
+  · exact fastStep1193
+  · exact fastStep1194
+  · exact fastStep1195
+  · exact fastStep1196
+  · exact fastStep1197
+  · exact fastStep1198
+  · exact fastStep1199
+#print axioms dispatch0011
+end Crown.ThreeClosure

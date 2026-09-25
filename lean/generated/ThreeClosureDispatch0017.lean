@@ -1,0 +1,114 @@
+import generated.ThreeClosureFastSteps0017
+import Crown.ThreeClosureDispatch
+import Mathlib.Tactic.FinCases
+namespace Crown.ThreeClosure
+open Crown.Ranks Crown.FiniteClosureChecks
+set_option maxRecDepth 200000
+set_option maxHeartbeats 0
+set_option Elab.async false
+theorem dispatch0017 : ∀ i : Fin 100,
+    StepCheck rows owner support core nextHint lastHint 6 (rangeIndex 1700 100 (by decide) i) := by
+  intro i
+  fin_cases i
+  · exact fastStep1700
+  · exact fastStep1701
+  · exact fastStep1702
+  · exact fastStep1703
+  · exact fastStep1704
+  · exact fastStep1705
+  · exact fastStep1706
+  · exact fastStep1707
+  · exact fastStep1708
+  · exact fastStep1709
+  · exact fastStep1710
+  · exact fastStep1711
+  · exact fastStep1712
+  · exact fastStep1713
+  · exact fastStep1714
+  · exact fastStep1715
+  · exact fastStep1716
+  · exact fastStep1717
+  · exact fastStep1718
+  · exact fastStep1719
+  · exact fastStep1720
+  · exact fastStep1721
+  · exact fastStep1722
+  · exact fastStep1723
+  · exact fastStep1724
+  · exact fastStep1725
+  · exact fastStep1726
+  · exact fastStep1727
+  · exact fastStep1728
+  · exact fastStep1729
+  · exact fastStep1730
+  · exact fastStep1731
+  · exact fastStep1732
+  · exact fastStep1733
+  · exact fastStep1734
+  · exact fastStep1735
+  · exact fastStep1736
+  · exact fastStep1737
+  · exact fastStep1738
+  · exact fastStep1739
+  · exact fastStep1740
+  · exact fastStep1741
+  · exact fastStep1742
+  · exact fastStep1743
+  · exact fastStep1744
+  · exact fastStep1745
+  · exact fastStep1746
+  · exact fastStep1747
+  · exact fastStep1748
+  · exact fastStep1749
+  · exact fastStep1750
+  · exact fastStep1751
+  · exact fastStep1752
+  · exact fastStep1753
+  · exact fastStep1754
+  · exact fastStep1755
+  · exact fastStep1756
+  · exact fastStep1757
+  · exact fastStep1758
+  · exact fastStep1759
+  · exact fastStep1760
+  · exact fastStep1761
+  · exact fastStep1762
+  · exact fastStep1763
+  · exact fastStep1764
+  · exact fastStep1765
+  · exact fastStep1766
+  · exact fastStep1767
+  · exact fastStep1768
+  · exact fastStep1769
+  · exact fastStep1770
+  · exact fastStep1771
+  · exact fastStep1772
+  · exact fastStep1773
+  · exact fastStep1774
+  · exact fastStep1775
+  · exact fastStep1776
+  · exact fastStep1777
+  · exact fastStep1778
+  · exact fastStep1779
+  · exact fastStep1780
+  · exact fastStep1781
+  · exact fastStep1782
+  · exact fastStep1783
+  · exact fastStep1784
+  · exact fastStep1785
+  · exact fastStep1786
+  · exact fastStep1787
+  · exact fastStep1788
+  · exact fastStep1789
+  · exact fastStep1790
+  · exact fastStep1791
+  · exact fastStep1792
+  · exact fastStep1793
+  · exact fastStep1794
+  · exact fastStep1795
+  · exact fastStep1796
+  · exact fastStep1797
+  · exact fastStep1798
+  · exact fastStep1799
+#print axioms dispatch0017
+end Crown.ThreeClosure

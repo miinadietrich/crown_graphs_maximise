@@ -1,0 +1,9 @@
+import generated.CatalogueConverseTriples
+
+namespace Crown.CertificateData
+#print axioms minimal_mask_iff_stored_template
+#print axioms catalogueUnion_iff_minimal
+#print axioms minimal_obstruction_union_count
+#print axioms minimal_obstruction_pair_count
+#print axioms minimal_obstruction_triple_count
+end Crown.CertificateData

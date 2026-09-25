@@ -1,0 +1,5 @@
+import generated.CertificateFormula
+import generated.CertificateSixFormula
+
+#print axioms Crown.CertificateData.frozen_formula_satisfied
+#print axioms Crown.CertificateSixData.reduced_formula_satisfied

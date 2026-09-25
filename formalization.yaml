@@ -1,0 +1,211 @@
+{
+  "version": "v0.4",
+  "project": {
+    "name": "Crown graph representation bounds",
+    "description": "Lean proofs of the sharp bipartite representation bound, crown extremality, and the supporting finite and structural results.",
+    "authors": [
+      "Matthew J. Colbrook",
+      "Catherine Drysdale"
+    ],
+    "responsible_maintainers": [
+      "Matthew J. Colbrook",
+      "Catherine Drysdale"
+    ],
+    "license": "Apache-2.0"
+  },
+  "repository": {
+    "role": "substantive-development"
+  },
+  "sources": [
+    {
+      "title": "Crown graphs maximise the representation number of bipartite graphs",
+      "authors": [
+        "Matthew J. Colbrook",
+        "Catherine Drysdale"
+      ],
+      "type": "article",
+      "relationship": "formalizes",
+      "location": "Main theorem, crown corollary, supporting lemmas and finite cases",
+      "note": "Reference manuscript SHA-256: 6f0509aab43d75acd1d2eed58fea9130778ae1ae03e7f685b056f2be4efdf68a. The theorem map is in docs/mathematics.md."
+    },
+    {
+      "title": "Crown graph computational certificates",
+      "authors": [
+        "Matthew J. Colbrook",
+        "Catherine Drysdale"
+      ],
+      "type": "software and finite data",
+      "relationship": "formalizes",
+      "id": "validation/SOURCES.json",
+      "license": "Apache-2.0"
+    },
+    {
+      "title": "On the representation number of a crown graph",
+      "authors": [
+        "M. Glen",
+        "S. Kitaev",
+        "A. Pyatkin"
+      ],
+      "id": "doi:10.1016/j.dam.2018.03.013",
+      "type": "article",
+      "relationship": "formalizes",
+      "location": "Crown representation number and extremal conjecture"
+    },
+    {
+      "title": "Solving computational problems in the theory of word-representable graphs",
+      "authors": [
+        "Ö. Akgün",
+        "I. Gent",
+        "S. Kitaev",
+        "H. Zantema"
+      ],
+      "id": "https://cs.uwaterloo.ca/journals/JIS/VOL22/Kitaev/kitaev11.html",
+      "type": "article",
+      "relationship": "formalizes",
+      "location": "Section 1.4; Section 2 Table 1; Conjecture 5"
+    },
+    {
+      "title": "On the conjecture of the representation number of bipartite graphs",
+      "authors": [
+        "K. Mozhui",
+        "K. V. Krishna"
+      ],
+      "id": "arXiv:2506.01057v1",
+      "type": "article",
+      "relationship": "adapts",
+      "location": "Section 2 construction"
+    },
+    {
+      "title": "Verification of proofs of unsatisfiability for CNF formulas",
+      "authors": [
+        "E. Goldberg",
+        "Y. Novikov"
+      ],
+      "id": "doi:10.1109/DATE.2003.1253718",
+      "type": "article",
+      "relationship": "background",
+      "location": "Unit propagation proof checking"
+    }
+  ],
+  "classification": {
+    "arxiv": [
+      "math.CO"
+    ]
+  },
+  "automation": {
+    "methods": [
+      {
+        "method": "other",
+        "tool_setup": "Lean tactic scripts, exact finite computation and LRAT proof-term reconstruction; standalone Python and C++ certificate validation."
+      }
+    ]
+  },
+  "status": {
+    "scope": "Complete graph bounds and supporting results, with all 243 public statements accepted by Lean Comparator.",
+    "sorry_count": 0,
+    "sorry_in_definitions": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "main_results": [
+      {
+        "declaration": "Crown.balanced_matrix_representation_bound",
+        "file": "lean/Crown/Main.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "declaration": "Crown.bipartite_representation_bound",
+        "file": "lean/Crown/Main.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "declaration": "Crown.bipartite_representation_number_bound",
+        "file": "lean/Crown/Main.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "declaration": "Crown.crown_representation_number",
+        "file": "lean/Crown/CrownValues.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "declaration": "Crown.crown_extremal",
+        "file": "lean/Crown/Main.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "declaration": "Crown.crown_extremal_uniform_length",
+        "file": "lean/Crown/Main.lean",
+        "sorry_count": 0,
+        "comparator_config": "lean/full-comparator.json",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "review": {
+    "status": "Lean kernel checked; independent statement comparison accepted",
+    "notes": "All 243 configured theorem comparisons and public axiom reports passed. Standalone certificate and arithmetic validation passed.",
+    "evidence": [
+      "verification/lean.json",
+      "verification/axioms.txt",
+      "validation/verification.json"
+    ]
+  },
+  "alignment": {
+    "theorem_map": "docs/mathematics.md",
+    "targets": "lean/full-comparator.json",
+    "challenge": "lean/Challenge.lean",
+    "solution": "lean/Solution.lean",
+    "supporting_results": "The comparison includes the main results and supporting lemmas. Literal histogram checks establish properties of supplied data."
+  },
+  "versions": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "LeanCert": "621a43d7cf21f87872392a01e874f2f1dbddc926",
+    "metadata_standard": "99c678e569c7c4c0772db297c5ddd5e4c9b6322e"
+  },
+  "acknowledgements": "Certificate replay adapts Mario Carneiro’s Mathlib/Tactic/Sat/FromLRAT.lean. Library, mathematical and tool attribution is in NOTICE and docs/dependencies.md.",
+  "related_formalizations": [
+    {
+      "id": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Tactic/Sat/FromLRAT.lean",
+      "relationship": "adapts",
+      "note": "Mario Carneiro’s LRAT proof reconstruction; see NOTICE."
+    }
+  ]
+}

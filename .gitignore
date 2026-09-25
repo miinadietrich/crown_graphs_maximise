@@ -1,0 +1,14 @@
+# Lean and tool build products
+.lake/
+.elan/
+build/
+dist/
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+*.o
+*.obj
+*.exe
+.DS_Store
+Thumbs.db

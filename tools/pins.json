@@ -1,0 +1,7 @@
+{
+  "lean": "leanprover/lean4:v4.33.1",
+  "comparator": {"url": "https://github.com/leanprover/comparator.git", "rev": "3927ad383f208ae977c340a91c48ac9b497d2097"},
+  "lean4export": {"url": "https://github.com/leanprover/lean4export.git", "rev": "15f6055e299ad5b89345e533cc2192f4cc00f659"},
+  "landrun": {"url": "https://github.com/Zouuup/landrun.git", "rev": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4"},
+  "go": {"version": "go1.27.1", "linux_amd64_url": "https://go.dev/dl/go1.27.1.linux-amd64.tar.gz", "linux_amd64_sha256": "63d339f0da5ab53635a56f2490a7984dfe12dfcff22ad749f63edaf590168445"}
+}

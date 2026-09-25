@@ -1,0 +1,3 @@
+# Preserve checked source and certificate bytes on every platform.
+* -text
+*.gz binary

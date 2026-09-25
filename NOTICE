@@ -1,0 +1,16 @@
+Crown graph representation bounds
+Copyright 2026 Matthew J. Colbrook and Catherine Drysdale.
+
+The certificate replay helpers in lean/generated/CertificateReplay.lean,
+CertificateReplaySix.lean, CertificateReplayDirectKernel.lean and
+CertificateOriginalCache.lean adapt Mathlib/Tactic/Sat/FromLRAT.lean
+by Mario Carneiro, distributed under the Apache License, Version 2.0.
+
+The proof development uses Lean, its standard library, mathlib and the
+dependencies identified in lean/lake-manifest.json. These dependencies retain
+their respective copyright notices and licences. External checking tools
+and their licences are listed in tools/pins.json and docs/dependencies.md.
+
+The paired word construction follows the construction of Mozhui and Krishna,
+as developed in the accompanying paper by Colbrook and Drysdale. Mathematical
+sources and the formal theorem map are listed in docs/mathematics.md.

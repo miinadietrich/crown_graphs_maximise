@@ -1,0 +1,3 @@
+import generated.CertificateSixOriginalGroup0019
+
+#print axioms Crown.CertificateSix.original_141926
