@@ -67,6 +67,8 @@ end Crown
 
 namespace Crown.BalancedLarge
 
+variable {k : ℕ} {B : Type*}
+
 /-- A bipartite graph with arbitrary Boolean adjacency matrix. -/
 def matrixGraph {A B : Type*} (M : A → B → Bool) : SimpleGraph (A ⊕ B) where
   Adj a b := match a, b with
